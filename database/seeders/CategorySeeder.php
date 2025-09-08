@@ -12,6 +12,7 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+      $categories = ['Sports', 'Politics', 'Technology', 'Health', 'Entertainment', 'Business', 'Science', 'World'];
     }
+        Category::insert($categories);
 }
