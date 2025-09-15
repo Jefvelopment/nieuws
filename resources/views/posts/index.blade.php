@@ -6,5 +6,5 @@
     {{$post->category->title}}
 </div>
 </article>
-
+<button formaction="{{ route('posts.edit', $post) }}" formmethod="GET">Edit</button>
 @endforeach
