@@ -14,19 +14,19 @@ class PostSeeder extends Seeder
     {
      $posts = [
          [
-             'title' => 'Breaking News: Major Event Unfolds',
-             'content' => 'A major event has unfolded in the city today, drawing attention from around the world...',
+             'title' => 'Motorcycle accident in the city center',
+             'content' => 'A motorcycle accident occurred in the city center today, causing significant traffic disruptions...',
              'category_id' => 1,
          ],
          [
-             'title' => 'Tech Innovations of 2024',
-             'content' => 'The year 2024 has seen a surge in technological innovations, with new gadgets and software...',
-             'category_id' => 3,
+             'title' => 'Jeffrey van Zon wins 2025 DNRT Final races at Zandvoort',
+             'content' => 'In an exhilarating display of skill and determination, Jeffrey van Zon clinched victory in the 2025 DNRT Final',
+             'category_id' => 2,
          ],
          [
-             'title' => 'Health Tips for a Better Life',
-             'content' => 'Maintaining good health is crucial. Here are some tips to help you lead a healthier life...',
-             'category_id' => 4,
+             'title' => 'Christmas time is here sooner than you think',
+             'content' => 'The holiday season is approaching, and it’s time to start preparing for Christmas...',
+             'category_id' => 3,
          ],
      ];
      Post::insert($posts);

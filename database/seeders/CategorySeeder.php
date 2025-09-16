@@ -19,6 +19,12 @@ $categories = [
             ['name' => 'Health', 'description' => 'Posts related to health and wellness.'],
             ['name' => 'Travel', 'description' => 'Posts about travel experiences and tips.'],
             ['name' => 'Food', 'description' => 'Posts about food and recipes.'],
+            ['name' => 'Sports', 'description' => 'Posts about sports events and news.'],
+            ['name' => 'Entertainment', 'description' => 'Posts about movies, music, and entertainment.'],
+            ['name' => 'Business', 'description' => 'Posts about business and finance.'],
+            ['name' => 'Lifestyle', 'description' => 'Posts about lifestyle and personal development.'],
+            ['name' => 'Education', 'description' => 'Posts about education and learning.'],
+            ['name' => 'Science', 'description' => 'Posts about scientific discoveries and research.'],
             
         ];
         Category::insert($categories);

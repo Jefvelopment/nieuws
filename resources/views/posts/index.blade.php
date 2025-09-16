@@ -1,3 +1,4 @@
+<x-base-layout>
 @foreach($posts as $post)
 <article>
     <h1>{{$post->title}}</h1>
@@ -8,3 +9,4 @@
 </article>
 <button formaction="{{ route('posts.edit', $post) }}" formmethod="GET">Edit</button>
 @endforeach
+</x-base-layout>
