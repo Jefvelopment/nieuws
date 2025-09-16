@@ -33,4 +33,9 @@ class PostController extends Controller {
         $categories = Category::all();
         return view('posts.edit', compact('post', 'categories'));
     }
+    public function show(\App\Models\Post $post)
+    {
+        $post->load('tags');
+        return view('posts.show', compact('post'));
+    }
 }

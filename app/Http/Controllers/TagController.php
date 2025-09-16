@@ -12,4 +12,10 @@ class TagController extends Controller
         $tags = Tag::all();
         return view('tags.index', compact('tags'));
     }
+
+    public function show(\App\Models\Tag $tag)
+    {
+        $tag->load('posts');
+        return view('tags.show', compact('tag'));
+    }
 }

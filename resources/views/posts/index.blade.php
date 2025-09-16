@@ -1,7 +1,11 @@
 <x-base-layout>
 @foreach($posts as $post)
 <article>
-    <h1>{{$post->title}}</h1>
+    <h1>
+        <a href="{{ route('posts.show', $post->id) }}" class="text-blue-600 hover:underline">
+            {{$post->title}}
+        </a>
+    </h1>
     <p>{{$post->content}}</p>
     <div>
     {{$post->category->title}}
